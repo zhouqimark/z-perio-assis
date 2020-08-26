@@ -284,13 +284,14 @@ class CalendarCell(context: Context, attrs: AttributeSet?) : Button(context, att
         // Draw background, depending on state
         if (isPressed) {
             // If cell is pressed, then fill with solid color
-            paintFocus.style = Paint.Style.FILL
-            paintFocus.shader = gradientPressButton
-            paintFocus.isAntiAlias = true
+            //paintFocus.color = 0xff000000.toInt()
             paintFocus.isDither = true
-            //paintFocus.color = -0x61f8
-            canvas.drawCircle(rectCanvas.width() / 2, rectCanvas.height() / 2, 25 * metrics.density, paintBackground)
+            paintFocus.shader = gradientPressButton
+            paintFocus.style = Paint.Style.FILL
+            paintFocus.isAntiAlias = true
+            canvas.drawCircle(rectCanvas.centerX(), rectCanvas.centerY(), 25 * metrics.density, paintFocus)
             colorLabel = -0x22000000
+            Log.d("CalendarCell", colorLabel.toInt().toString())
         } else {
             // normal state (or focused), then draw color
             // depending on entry type
@@ -326,7 +327,7 @@ class CalendarCell(context: Context, attrs: AttributeSet?) : Button(context, att
             paintBackground.shader = gradient
             paintBackground.style = Paint.Style.FILL
             paintBackground.isAntiAlias = true
-            canvas.drawCircle(rectCanvas.width() / 2, rectCanvas.height() / 2, 25 * metrics.density, paintBackground)
+            canvas.drawCircle(rectCanvas.centerX(), rectCanvas.centerY(), 25 * metrics.density, paintBackground)
             // Draw period start indicator
             rectOverlay[(4 * metrics.density).toInt(), rectCanvas.height().toInt() - ((2 + overlaysize) * metrics.density).toInt(), ((overlaysize + 2) * metrics.density).toInt()] = rectCanvas.height().toInt() - (4 * metrics.density).toInt()
 
@@ -555,7 +556,7 @@ class CalendarCell(context: Context, attrs: AttributeSet?) : Button(context, att
         rectOval1 = RectF()
         rectOval2 = RectF()
         rectLabel = Rect()
-        gradientPressButton = makeCellGradient(0xfffff000.toInt(), 0xfffff000.toInt())
+        gradientPressButton = makeCellGradient(0xff868f96.toInt(), 0xff596164.toInt())
         gradientPeriodConfirmed = makeCellGradient(-0xbbcca, -0xbbcca)
         gradientPeriodPredicted = makeCellGradient(-0x106566, -0x106566)
         gradientFertilityPredicted = makeCellGradient(-0xde690d, -0xde690d)
@@ -563,7 +564,7 @@ class CalendarCell(context: Context, attrs: AttributeSet?) : Button(context, att
         gradientInfertilePredicted = makeCellGradient(-0x11a8, -0x11a8)
         gradientInfertileFuture = makeCellGradient(-0xa63, -0xa63)
         //gradientEmpty = makeCellGradient(-0x8a8a8b, -0x8a8a8b)
-        gradientEmpty = makeCellGradient( 0xffe2ebf0.toInt(), 0xffffffff.toInt());
+        gradientEmpty = makeCellGradient( 0xffcfd9df.toInt(), 0xffe2ebf0.toInt());
 
         // Overlays
         rectOverlay = Rect()

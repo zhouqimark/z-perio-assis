@@ -24,6 +24,7 @@ import android.app.backup.BackupManager
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.util.Log
 import android.view.*
 import android.view.GestureDetector.SimpleOnGestureListener
 import android.view.View.OnTouchListener
@@ -37,6 +38,8 @@ import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.drawerlayout.widget.DrawerLayout.DrawerListener
 import com.google.android.material.navigation.NavigationView
+import com.mxn.soul.flowingdrawer_core.ElasticDrawer
+import com.mxn.soul.flowingdrawer_core.FlowingDrawer
 import com.z5i.periodical.PeriodicalDatabase.DayEntry
 import com.z5i.periodical.context.ZApplication
 import java.text.SimpleDateFormat
@@ -94,28 +97,36 @@ class MainActivityApp : AppCompatActivity(), NavigationView.OnNavigationItemSele
         setContentView(R.layout.activity_main)
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
-        val drawer = findViewById<DrawerLayout>(R.id.drawer_layout)
-        val toggle = ActionBarDrawerToggle(
-                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close)
-        drawer.addDrawerListener(toggle)
-        toggle.syncState()
+        val drawer = findViewById<FlowingDrawer>(R.id.drawer_layout)
+        //val toggle = ActionBarDrawerToggle(
+        //        this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close)
+        //drawer.addDrawerListener(toggle)
+        //toggle.syncState()
+        drawer.setTouchMode(ElasticDrawer.TOUCH_MODE_BEZEL)
 
         // Listener to detect when the navigation drawer is opening, so we
         // avoid the main view to handle the swipe of the navigation drawer
-        drawer.addDrawerListener(object : DrawerListener {
-            override fun onDrawerSlide(drawerView: View, slideOffset: Float) {
+        drawer.setOnDrawerStateChangeListener(object : ElasticDrawer.OnDrawerStateChangeListener {
+//            override fun onDrawerSlide(drawerView: View, slideOffset: Float) {
+//                navigationDrawerActive = true
+//            }
+//
+//            override fun onDrawerOpened(drawerView: View) {
+//                navigationDrawerActive = true
+//            }
+//
+//            override fun onDrawerClosed(drawerView: View) {
+//                navigationDrawerActive = false
+//            }
+//
+//            override fun onDrawerStateChanged(newState: Int) {}
+            override fun onDrawerStateChange(oldState: Int, newState: Int) {
+                Log.d("CalendarCell", newState.toString())
+            }
+
+            override fun onDrawerSlide(openRatio: Float, offsetPixels: Int) {
                 navigationDrawerActive = true
             }
-
-            override fun onDrawerOpened(drawerView: View) {
-                navigationDrawerActive = true
-            }
-
-            override fun onDrawerClosed(drawerView: View) {
-                navigationDrawerActive = false
-            }
-
-            override fun onDrawerStateChanged(newState: Int) {}
         })
         val navigationView = findViewById<NavigationView>(R.id.nav_view)
         navigationView.setNavigationItemSelectedListener(this)
@@ -392,7 +403,7 @@ class MainActivityApp : AppCompatActivity(), NavigationView.OnNavigationItemSele
                     for (s in entry.symptoms) {
                         if (s == 1) cell.setIntercourse(true) else cell.setNotes(true)
                     }
-                    if (!entry.notes.isEmpty()) cell.setNotes(true)
+                    if (entry.notes.isNotEmpty()) cell.setNotes(true)
                 } else {
                     cell.setType(DayEntry.EMPTY)
                     cell.setDayofcycle(0)
