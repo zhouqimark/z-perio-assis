@@ -257,7 +257,8 @@ class CalendarCell(context: Context, attrs: AttributeSet?) : Button(context, att
     override fun onSizeChanged(w: Int, h: Int, oldw: Int, oldh: Int) {
         super.onSizeChanged(w, h, oldw, oldh)
         rectCanvas[0f, 0f, w.toFloat()] = h.toFloat()
-        gradientPeriodConfirmed = makeCellGradient(-0xbbcca, -0xbbcca)
+        //gradientPeriodConfirmed = makeCellGradient(-0xbbcca, -0xbbcca)
+        makeCellGradient(0xfff093fb.toInt(), 0xfff5576c.toInt())
         gradientPeriodPredicted = makeCellGradient(-0x106566, -0x106566)
         gradientFertilityPredicted = makeCellGradient(-0xde690d, -0xde690d)
         gradientFertilityFuture = makeCellGradient(-0x6f3507, -0x6f3507)
@@ -289,7 +290,7 @@ class CalendarCell(context: Context, attrs: AttributeSet?) : Button(context, att
             paintFocus.shader = gradientPressButton
             paintFocus.style = Paint.Style.FILL
             paintFocus.isAntiAlias = true
-            canvas.drawCircle(rectCanvas.centerX(), rectCanvas.centerY(), 25 * metrics.density, paintFocus)
+            canvas.drawCircle(rectCanvas.centerX(), rectCanvas.centerY(), 20 * metrics.density, paintFocus)
             colorLabel = -0x22000000
             Log.d("CalendarCell", colorLabel.toInt().toString())
         } else {
@@ -327,7 +328,7 @@ class CalendarCell(context: Context, attrs: AttributeSet?) : Button(context, att
             paintBackground.shader = gradient
             paintBackground.style = Paint.Style.FILL
             paintBackground.isAntiAlias = true
-            canvas.drawCircle(rectCanvas.centerX(), rectCanvas.centerY(), 25 * metrics.density, paintBackground)
+            canvas.drawCircle(rectCanvas.centerX(), rectCanvas.centerY(), 20 * metrics.density, paintBackground)
             // Draw period start indicator
             rectOverlay[(4 * metrics.density).toInt(), rectCanvas.height().toInt() - ((2 + overlaysize) * metrics.density).toInt(), ((overlaysize + 2) * metrics.density).toInt()] = rectCanvas.height().toInt() - (4 * metrics.density).toInt()
 
@@ -376,7 +377,7 @@ class CalendarCell(context: Context, attrs: AttributeSet?) : Button(context, att
 
         // Draw main label
         label = text.toString()
-        paintLabel.textSize = 16 * metrics.scaledDensity
+        paintLabel.textSize = 10 * metrics.scaledDensity
         paintLabel.color = colorLabel
         paintLabel.getTextBounds(label, 0, label.length, rectLabel)
         canvas.drawText(label, (width - rectLabel.width()) / 2.toFloat(),
@@ -398,7 +399,7 @@ class CalendarCell(context: Context, attrs: AttributeSet?) : Button(context, att
             if (isCurrent) {
                 paintOval.style = Paint.Style.STROKE
                 paintOval.isAntiAlias = true
-                rectOval1[10 * metrics.density, 4 * metrics.density, rectCanvas.right - 4 * metrics.density] = rectCanvas.bottom - 4 * metrics.density
+                rectOval1[rectCanvas.left + 22 * metrics.density, 4 * metrics.density, rectCanvas.right - 15 * metrics.density] = rectCanvas.bottom - 4 * metrics.density
                 rectOval2[rectOval1.left - 6 * metrics.density, rectOval1.top - 1, rectOval1.right] = rectOval1.bottom
 
                 // Center oval rectangle as a square
@@ -417,7 +418,7 @@ class CalendarCell(context: Context, attrs: AttributeSet?) : Button(context, att
 
                 // Draw oval
                 paintOval.color = 0xff00bfff.toInt()
-                paintOval.strokeWidth = 3 * metrics.density
+                paintOval.strokeWidth = 2 * metrics.density
                 canvas.drawArc(rectOval1, 200f, 160f, false, paintOval)
                 canvas.drawArc(rectOval2, 0f, 240f, false, paintOval)
                 paintOval.color = 0xff00bfff.toInt()
@@ -557,7 +558,7 @@ class CalendarCell(context: Context, attrs: AttributeSet?) : Button(context, att
         rectOval2 = RectF()
         rectLabel = Rect()
         gradientPressButton = makeCellGradient(0xff868f96.toInt(), 0xff596164.toInt())
-        gradientPeriodConfirmed = makeCellGradient(-0xbbcca, -0xbbcca)
+        gradientPeriodConfirmed = makeCellGradient(0xfff5576c.toInt(), 0xfff093fb.toInt())
         gradientPeriodPredicted = makeCellGradient(-0x106566, -0x106566)
         gradientFertilityPredicted = makeCellGradient(-0xde690d, -0xde690d)
         gradientFertilityFuture = makeCellGradient(-0x6f3507, -0x6f3507)

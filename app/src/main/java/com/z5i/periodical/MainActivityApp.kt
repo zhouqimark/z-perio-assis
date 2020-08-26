@@ -121,7 +121,7 @@ class MainActivityApp : AppCompatActivity(), NavigationView.OnNavigationItemSele
 //
 //            override fun onDrawerStateChanged(newState: Int) {}
             override fun onDrawerStateChange(oldState: Int, newState: Int) {
-                this@MainActivityApp.navigationDrawerActive = newState != 0
+                this@MainActivityApp.navigationDrawerActive = if (newState == 0) false else true
             }
 
             override fun onDrawerSlide(openRatio: Float, offsetPixels: Int) {
