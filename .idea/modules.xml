@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Desktop-z-perio-assis.iml" filepath="$PROJECT_DIR$/.idea/modules/Desktop-z-perio-assis.iml" group="z-perio-assis" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Desktop-z-perio-assis-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Desktop-z-perio-assis-app.iml" group="z-perio-assis/app" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="source/app" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/periodical.iml" filepath="$PROJECT_DIR$/.idea/modules/periodical.iml" group="periodical" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/periodical-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/periodical-app.iml" group="periodical/app" />
