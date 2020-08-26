@@ -1,0 +1,1 @@
+'N menstruele kalender met berekening van vrugbare dae volgens Knaus-Ogino.

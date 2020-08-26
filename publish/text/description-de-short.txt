@@ -1,0 +1,1 @@
+Menstruationskalender mit Berechnung der fruchtbaren Tage nach Knaus-Ogino.

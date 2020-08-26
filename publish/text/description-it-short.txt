@@ -1,0 +1,1 @@
+Un calendario mestruale con calcolo dei giorni fertili secondo Ogino-Knaus.

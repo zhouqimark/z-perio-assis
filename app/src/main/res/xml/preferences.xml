@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+            android:title="@string/pref_periodlength"
+            android:defaultValue="4"
+            android:key="period_length"
+            android:inputType="number" />
+    <EditTextPreference
+            android:title="@string/pref_luteallength"
+            android:defaultValue="14"
+            android:key="luteal_length"
+            android:inputType="number" />
+    <ListPreference
+            android:title="@string/pref_startofweek"
+            android:defaultValue="0"
+            android:key="startofweek"
+            android:entries="@array/list_startofweek"
+            android:entryValues="@array/values_startofweek" />
+    <EditTextPreference
+        android:title="@string/pref_maximum_cycle_length"
+        android:defaultValue="183"
+        android:key="maximum_cycle_length"
+        android:inputType="number" />
+    <CheckBoxPreference
+        android:title="@string/pref_direct_details"
+        android:defaultValue="false"
+        android:key="direct_details" />
+    <CheckBoxPreference
+        android:title="@string/pref_show_cycle"
+        android:defaultValue="true"
+        android:key="show_cycle" />
+</PreferenceScreen>

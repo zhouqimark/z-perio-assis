@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/buttonprev"
+        android:layout_width="54dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/previous_month"
+        android:icon="@drawable/ic_arrow_back_black_32dp"
+        android:gravity="center"
+        android:title="@string/previous_month"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/buttontoday"
+        android:layout_width="54dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/current_day"
+        android:icon="@drawable/ic_today_black_32dp"
+        android:gravity="center"
+        android:title="@string/current_day"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/buttonnext"
+        android:layout_width="54dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/next_month"
+        android:icon="@drawable/ic_arrow_forward_black_32dp"
+        android:title="@string/next_month"
+        app:showAsAction="always" />
+
+</menu>

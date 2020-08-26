@@ -1,0 +1,95 @@
+<en-US>
+Events and symptons are now separate lists in the details.
+
+The calendar view will now indicate if there is an event, symptom or note.
+
+Added Greek translation.
+</en-US>
+
+<cs-CZ>
+Události a symptomy jsou nyní oddělené seznamy v detailech.
+
+Zobrazení kalendáře nyní zobrazí, zda se jedná o událost, příznak nebo poznámku.
+
+Překlad byl přidán do řečtiny.
+</cs-CZ>
+
+<de-DE>
+Ereignisse und Symptome sind jetzt separate Listen in den Details.
+
+Die Kalenderansicht zeigt nun an, ob ein Ereignis, ein Symptom oder eine Notiz vorliegt.
+
+Übersetzung auf Griechisch ergänzt.
+</de-DE>
+
+<es-ES>
+Los eventos y los síntomas ahora son listas separadas en los detalles.
+
+La vista de calendario ahora indicará si hay un evento, síntoma o nota.
+
+Añadida traducción griega.
+</es-ES>
+
+<fr-FR>
+Les événements et les symptômes sont maintenant des listes séparées dans les détails.
+
+La vue de l'agenda indiquera maintenant s'il y a un événement, un symptôme ou une note.
+
+Ajout de la traduction grecque.
+</fr-FR>
+
+<it-IT>
+Eventi e sintomi sono ora elenchi separati nei dettagli.
+
+La vista del calendario ora indicherà se c'è un evento, un sintomo o una nota.
+
+Aggiunta traduzione greca.
+</it-IT>
+
+<nl-NL>
+Gebeurtenissen en symptomen zijn nu afzonderlijke lijsten in de details.
+
+De kalenderweergave zal nu aangeven of er een gebeurtenis, symptoom of notitie is.
+
+Griekse vertaling toegevoegd.
+</nl-NL>
+
+<ru-RU>
+События и симптомы теперь являются отдельными списками в деталях.
+
+Теперь в представлении календаря будет указано, есть ли событие, симптом или примечание.
+
+Добавлен греческий перевод.
+</ru-RU>
+
+<af>
+Gebeurtenissen en symptomen zijn nu afzonderlijke lijsten in de details.
+
+De kalenderweergave zal nu aangeven of er een gebeurtenis, symptoom of notitie is.
+
+Bygevoeg Griekse vertaling.
+</af>
+
+<pt-BR>
+Eventos e sintomas são agora listas separadas nos detalhes.
+
+A visualização do calendário agora indicará se há um evento, sintoma ou nota.
+
+Adicionado tradução grega.
+</pt-BR>
+
+<pl-PL>
+Zdarzenia i symptomy są teraz oddzielnymi listami w szczegółach.
+
+Widok kalendarza wskaże teraz, czy wystąpiło zdarzenie, objaw lub notatka.
+
+Dodano tłumaczenie greckie.
+</pl-PL>
+
+<el-GR>
+Τα συμβάντα και τα συμπτώματα είναι τώρα ξεχωριστές λίστες στις λεπτομέρειες.
+
+Η προβολή ημερολογίου θα υποδεικνύει τώρα εάν υπάρχει ένα συμβάν, ένα σύμπτωμα ή μια σημείωση.
+
+Προστέθηκε ελληνική μετάφραση.
+</el-GR>
