@@ -26,6 +26,7 @@ import android.net.Uri
 import androidx.documentfile.provider.DocumentFile
 import java.io.*
 import java.util.*
+import kotlin.collections.ArrayList
 
 /**
  * Database of the app
@@ -52,8 +53,10 @@ internal class PeriodicalDatabase(
     val DATABASE_NAME = "main.db"
     val DATABASE_VERSION = 4
 
+    private var db: SQLiteDatabase? = null
+
     /**
-     * Helper to create or open database
+     * 数据库帮助类
      */
     private inner class PeriodicalDataOpenHelper
     /**
@@ -212,11 +215,8 @@ internal class PeriodicalDatabase(
         }
     }
 
-    /* Reference to database */
-    private var db: SQLiteDatabase? = null
-
     /**
-     * Local helper to manage calculated calendar entries
+     * 推算日历条目管理员
      */
     class DayEntry {
         var type: Int
@@ -273,39 +273,40 @@ internal class PeriodicalDatabase(
     /**
      * Calculated day entries
      */
-    val dayEntries: Vector<DayEntry>
+    val dayEntries: ArrayList<DayEntry>
 
     /**
-     * Calculated average cycle length
+     * 平均周期长度
      */
     var cycleAverage = 0
 
     /**
-     * Calculated longest cycle length
+     * 最长周期长度
      */
     var cycleLongest = 0
 
     /**
-     * Calculated shortest cycle length
+     * 最短周期长度
      */
     var cycleShortest = 0
 
     /**
-     * Open the database
+     * 打开数据库
      */
     @SuppressLint("Recycle")
     private fun open() {
-        val dataOpenHelper: PeriodicalDataOpenHelper
-        dataOpenHelper = PeriodicalDataOpenHelper(context)
-        db = dataOpenHelper.writableDatabase
-        assert(db != null)
+        val dataOpenHelper = PeriodicalDataOpenHelper(context)
+        this.db = dataOpenHelper.writableDatabase
+        if (BuildConfig.DEBUG && db == null) {
+            error("Assertion failed")
+        }
     }
 
     /**
-     * Close the database
+     * 关闭数据库
      */
     fun close() {
-        if (db != null) db!!.close()
+        db?.close()
     }
 
     /**
@@ -469,7 +470,7 @@ internal class PeriodicalDatabase(
         if (maximumcyclelength < 60) maximumcyclelength = 60
 
         // Clean up existing data
-        dayEntries.removeAllElements()
+        dayEntries.clear()
 
         // Determine minimum entry count for
         // shortest/longest period calculation
@@ -640,7 +641,7 @@ internal class PeriodicalDatabase(
                         // The existing entry is in the future, so create a new blank entry before
                         // this day to hold the details
                         entryTarget = DayEntry(DayEntry.EMPTY, eventdate, 0, 0)
-                        dayEntries.insertElementAt(entryTarget, index)
+                        dayEntries.add(index, entryTarget)
                     } else {
                         // Skip existing entries, until a matching one is found
                         do {
@@ -678,7 +679,7 @@ internal class PeriodicalDatabase(
         var entry: DayEntry
 
         // Clean up existing data
-        dayEntries.removeAllElements()
+        dayEntries.clear()
 
         // Get all entries from the database
         val statement = "select eventtype, eventdate from data where eventtype=" + String.format("%d", DayEntry.PERIOD_START) +
@@ -706,7 +707,7 @@ internal class PeriodicalDatabase(
     @SuppressLint("DefaultLocale")
     fun loadRawDataWithDetails() {
         // Clean up existing data
-        dayEntries.removeAllElements()
+        dayEntries.clear()
 
         // Get all entries with details from the database
         val statement = "select data.eventdate, eventtype, intensity, content, symptom from " +
@@ -1208,6 +1209,6 @@ internal class PeriodicalDatabase(
      */
     init {
         open()
-        dayEntries = Vector()
+        dayEntries = ArrayList()
     }
 }

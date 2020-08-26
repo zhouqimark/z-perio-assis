@@ -14,7 +14,7 @@
         android:id="@+id/mainview"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:background="@drawable/background_img"
+        android:background="@drawable/main_background_img"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="Overdraw,TooManyViews">

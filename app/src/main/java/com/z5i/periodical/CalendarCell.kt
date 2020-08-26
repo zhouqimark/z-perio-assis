@@ -201,8 +201,6 @@ class CalendarCell(context: Context, attrs: AttributeSet?) : Button(context, att
      */
     private val rectOverlay: Rect
 
-    private val bitmapLike: Bitmap
-
     /**
      * Bitmap for entries of type "period"  and "predicted period"
      */
@@ -567,7 +565,6 @@ class CalendarCell(context: Context, attrs: AttributeSet?) : Button(context, att
         paintBitmap = Paint()
         paintBitmap.style = Paint.Style.FILL
         paintBitmap.isFilterBitmap = true
-        this.bitmapLike = BitmapFactory.decodeResource(resources, R.drawable.icon_like)
         bitmapPeriod = BitmapFactory.decodeResource(resources,
                 R.drawable.ic_start)
         bitmapOvulation = BitmapFactory.decodeResource(resources,

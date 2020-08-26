@@ -9,12 +9,11 @@
     tools:context=".MainActivityApp"
     tools:showIn="@layout/app_bar_main">
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+    <RelativeLayout
         android:id="@+id/mainview"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:background="@drawable/background_img"
+        android:background="@drawable/main_background_img"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="Overdraw,TooManyViews">
@@ -46,6 +45,7 @@
                 android:id="@+id/calendar"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
+                android:layout_marginBottom="50dp"
                 android:shrinkColumns="*"
                 android:stretchColumns="*">
 
