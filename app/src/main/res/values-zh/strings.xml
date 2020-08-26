@@ -40,7 +40,7 @@
     <string name="backup_noruiyet">no location selected yet</string>
     <string name="backup_failed">备份失败!</string>
     <string name="restore_title">导入数据</string>
-    <string name="restore_selectfolder">Please select the location, where the backup was saved (the location with the folder \"de.arnowelzel.android.periodical\").</string>
+    <string name="restore_selectfolder">Please select the location, where the backup was saved (the location with the folder \"com.z5i.periodical\").</string>
     <string name="restore_text">想要导入最近一次数据备份吗?\n这将覆盖当前数据!</string>
     <string name="restore_ok">好</string>
     <string name="restore_cancel">取消</string>

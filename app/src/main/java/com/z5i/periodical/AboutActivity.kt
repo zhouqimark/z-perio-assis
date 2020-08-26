@@ -1,5 +1,5 @@
 /*
- * Periodical "help" activity
+ * Periodical "about" activity
  * Copyright (C) 2012-2020 Arno Welzel
  *
  * This code is free software: you can redistribute it and/or modify
@@ -15,8 +15,9 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package de.arnowelzel.android.periodical
+package com.z5i.periodical
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
@@ -26,12 +27,13 @@ import android.webkit.WebViewClient
 import androidx.appcompat.app.AppCompatActivity
 
 /**
- * Activity to handle the "Help" command
+ * Activity to handle the "About" command
  */
-class HelpActivity : AppCompatActivity() {
+class AboutActivity : AppCompatActivity() {
     /**
      * Called when the activity starts
      */
+    @SuppressLint("SetJavaScriptEnabled")
     public override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -42,15 +44,29 @@ class HelpActivity : AppCompatActivity() {
         val actionBar = supportActionBar!!
         actionBar.setDisplayHomeAsUpEnabled(true)
         val view = findViewById<WebView>(R.id.webView)
+        view.settings.javaScriptEnabled = true
         view.webViewClient = object : WebViewClient() {
-            // Handle URLs always as external links
+            // Update version and year after loading the document
+            override fun onPageFinished(view: WebView, url: String) {
+                val preferences = PreferenceUtils(applicationContext)
+                var backupUriString = preferences.getString("backup_uri", "")
+                if (backupUriString == "") {
+                    backupUriString = "<em>(" + getString(R.string.backup_noruiyet) + ")</em>"
+                }
+                super.onPageFinished(view, url)
+                view.loadUrl("javascript:replace('version', '" + BuildConfig.VERSION_NAME + "')")
+                view.loadUrl("javascript:replace('year', '" + BuildConfig.VERSION_YEAR + "')")
+                view.loadUrl("javascript:replace('backupfolder','$backupUriString')")
+            }
+
+            // Handle URLs always external links
             override fun shouldOverrideUrlLoading(view: WebView, url: String): Boolean {
                 val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
                 startActivity(intent)
                 return true
             }
         }
-        view.loadUrl("file:///android_asset/" + getString(R.string.asset_help))
+        view.loadUrl("file:///android_asset/" + getString(R.string.asset_about))
     }
 
     /**

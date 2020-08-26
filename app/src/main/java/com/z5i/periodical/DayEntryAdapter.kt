@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package de.arnowelzel.android.periodical
+package com.z5i.periodical
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -26,8 +26,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.TextView
-import de.arnowelzel.android.periodical.PeriodicalDatabase.DayEntry
-import de.arnowelzel.android.periodical.context.ZApplication.Companion.context
+import com.z5i.periodical.PeriodicalDatabase.DayEntry
+import com.z5i.periodical.context.ZApplication.Companion.context
 
 /**
  * Custom adapter to populate calendar entry list items

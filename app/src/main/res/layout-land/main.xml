@@ -199,7 +199,7 @@
                     android:layout_weight="1"
                     android:orientation="horizontal">
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal01"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -208,7 +208,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal02"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -217,7 +217,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal03"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -226,7 +226,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal04"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -235,7 +235,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal05"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -244,7 +244,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal06"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -253,7 +253,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal07"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -270,7 +270,7 @@
                     android:layout_weight="1"
                     android:orientation="horizontal">
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal08"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -279,7 +279,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal09"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -288,7 +288,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal10"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -297,7 +297,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal11"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -306,7 +306,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal12"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -315,7 +315,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal13"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -324,7 +324,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal14"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -341,7 +341,7 @@
                     android:layout_weight="1"
                     android:orientation="horizontal">
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal15"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -350,7 +350,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal16"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -359,7 +359,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal17"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -368,7 +368,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal18"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -377,7 +377,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal19"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -386,7 +386,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal20"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -395,7 +395,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal21"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -412,7 +412,7 @@
                     android:layout_weight="1"
                     android:orientation="horizontal">
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal22"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -421,7 +421,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal23"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -430,7 +430,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal24"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -439,7 +439,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal25"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -448,7 +448,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal26"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -457,7 +457,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal27"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -466,7 +466,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal28"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -483,7 +483,7 @@
                     android:layout_weight="1"
                     android:orientation="horizontal">
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal29"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -492,7 +492,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal30"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -501,7 +501,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal31"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -510,7 +510,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal32"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -519,7 +519,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal33"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -528,7 +528,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal34"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -537,7 +537,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal35"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -554,7 +554,7 @@
                     android:layout_weight="1"
                     android:orientation="horizontal">
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal36"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -563,7 +563,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal37"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -572,7 +572,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal38"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -581,7 +581,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal39"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -590,7 +590,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal40"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -599,7 +599,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal41"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -608,7 +608,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal42"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -776,7 +776,7 @@
                     android:layout_weight="1"
                     android:orientation="horizontal">
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal01_2"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -785,7 +785,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal02_2"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -794,7 +794,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal03_2"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -803,7 +803,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal04_2"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -812,7 +812,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal05_2"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -821,7 +821,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal06_2"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -830,7 +830,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal07_2"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -847,7 +847,7 @@
                     android:layout_weight="1"
                     android:orientation="horizontal">
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal08_2"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -856,7 +856,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal09_2"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -865,7 +865,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal10_2"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -874,7 +874,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal11_2"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -883,7 +883,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal12_2"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -892,7 +892,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal13_2"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -901,7 +901,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal14_2"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -918,7 +918,7 @@
                     android:layout_weight="1"
                     android:orientation="horizontal">
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal15_2"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -927,7 +927,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal16_2"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -936,7 +936,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal17_2"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -945,7 +945,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal18_2"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -954,7 +954,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal19_2"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -963,7 +963,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal20_2"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -972,7 +972,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal21_2"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -989,7 +989,7 @@
                     android:layout_weight="1"
                     android:orientation="horizontal">
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal22_2"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -998,7 +998,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal23_2"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -1007,7 +1007,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal24_2"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -1016,7 +1016,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal25_2"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -1025,7 +1025,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal26_2"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -1034,7 +1034,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal27_2"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -1043,7 +1043,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal28_2"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -1060,7 +1060,7 @@
                     android:layout_weight="1"
                     android:orientation="horizontal">
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal29_2"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -1069,7 +1069,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal30_2"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -1078,7 +1078,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal31_2"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -1087,7 +1087,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal32_2"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -1096,7 +1096,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal33_2"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -1105,7 +1105,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal34_2"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -1114,7 +1114,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal35_2"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -1131,7 +1131,7 @@
                     android:layout_weight="1"
                     android:orientation="horizontal">
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal36_2"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -1140,7 +1140,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal37_2"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -1149,7 +1149,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal38_2"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -1158,7 +1158,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal39_2"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -1167,7 +1167,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal40_2"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -1176,7 +1176,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal41_2"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"
@@ -1185,7 +1185,7 @@
                         android:minHeight="10dp"
                         android:onClick="handleCalendarButton" />
 
-                    <de.arnowelzel.android.periodical.CalendarCell
+                    <com.z5i.periodical.CalendarCell
                         android:id="@+id/cal42_2"
                         android:layout_height="fill_parent"
                         android:layout_margin="1dp"

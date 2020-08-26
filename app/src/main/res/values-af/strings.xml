@@ -40,7 +40,7 @@
     <string name="backup_noruiyet">geen ligging gekies nie</string>
     <string name="backup_failed">Backup werk nie!</string>
     <string name="restore_title">Restore data</string>
-    <string name="restore_selectfolder">Kies die plek waar die rugsteun gestoor is (die plek met die lêergids \"de.arnowelzel.android.periodical\").</string>
+    <string name="restore_selectfolder">Kies die plek waar die rugsteun gestoor is (die plek met die lêergids \"com.z5i.periodical\").</string>
     <string name="restore_text">Wil U die laaste backup restoreer?\nDit sal die huidige data vervang!</string>
     <string name="restore_ok">OK</string>
     <string name="restore_cancel">Kanselleer</string>

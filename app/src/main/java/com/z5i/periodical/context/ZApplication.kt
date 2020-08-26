@@ -1,4 +1,4 @@
-package de.arnowelzel.android.periodical.context
+package com.z5i.periodical.context
 
 import android.app.Application
 import android.content.Context

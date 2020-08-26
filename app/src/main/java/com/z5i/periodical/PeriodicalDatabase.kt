@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package de.arnowelzel.android.periodical
+package com.z5i.periodical
 
 import android.annotation.SuppressLint
 import android.content.Context

@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package de.arnowelzel.android.periodical
+package com.z5i.periodical
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -28,7 +28,7 @@ import android.widget.AdapterView.OnItemClickListener
 import android.widget.ArrayAdapter
 import android.widget.ListView
 import androidx.appcompat.app.AppCompatActivity
-import de.arnowelzel.android.periodical.PeriodicalDatabase.DayEntry
+import com.z5i.periodical.PeriodicalDatabase.DayEntry
 import java.util.*
 
 /**

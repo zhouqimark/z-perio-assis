@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package de.arnowelzel.android.periodical
+package com.z5i.periodical
 
 import android.annotation.SuppressLint
 import android.app.backup.BackupManager
@@ -28,8 +28,8 @@ import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatCheckBox
-import de.arnowelzel.android.periodical.PeriodicalDatabase.DayEntry
-import de.arnowelzel.android.periodical.context.ZApplication
+import com.z5i.periodical.PeriodicalDatabase.DayEntry
+import com.z5i.periodical.context.ZApplication
 import java.text.DateFormat
 
 /**

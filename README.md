@@ -36,10 +36,10 @@ Source:
 https://github.com/arnowelzel/periodical
 
 Download latest version at Google Play:  
-https://play.google.com/store/apps/details?id=de.arnowelzel.android.periodical
+https://play.google.com/store/apps/details?id=com.z5i.periodical
 
 Download latest version at F-Droid:  
-https://f-droid.org/repository/browse/?fdid=de.arnowelzel.android.periodical
+https://f-droid.org/repository/browse/?fdid=com.z5i.periodical
 
 Download latest version as APK:  
 http://arnowelzel.de/download/Periodical.apk

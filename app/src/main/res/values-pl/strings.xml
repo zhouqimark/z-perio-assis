@@ -40,7 +40,7 @@
     <string name="backup_noruiyet">nie wybrano jeszcze lokalizacji</string>
     <string name="backup_failed">Tworzenie zapasowej kopii danych nieudane!</string>
     <string name="restore_title">Przywróć dane</string>
-    <string name="restore_selectfolder">Wybierz lokalizację, gdzie kopia zapasowa została zapisana (lokalizacja z folderem \"de.arnowelzel.android.periodical\").</string>
+    <string name="restore_selectfolder">Wybierz lokalizację, gdzie kopia zapasowa została zapisana (lokalizacja z folderem \"com.z5i.periodical\").</string>
     <string name="restore_text">Chcesz przywrócić ostatnią kopie zapasową?\nTo podmieni twoje obecne dane!</string>
     <string name="restore_ok">OK</string>
     <string name="restore_cancel">Anuluj</string>

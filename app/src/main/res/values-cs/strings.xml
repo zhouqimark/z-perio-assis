@@ -40,7 +40,7 @@
     <string name="backup_noruiyet">zatím není vybrána žádná poloha</string>
     <string name="backup_failed">Záloha selhala!</string>
     <string name="restore_title">Obnovit data</string>
-    <string name="restore_selectfolder">Vyberte prosím umístění, kde byla uložena záloha (umístění se složkou \"de.arnowelzel.android.periodical\").</string>
+    <string name="restore_selectfolder">Vyberte prosím umístění, kde byla uložena záloha (umístění se složkou \"com.z5i.periodical\").</string>
     <string name="restore_text">Chcete obnovit data z poslední zálohy?\nTím budou nahrazena současná data!</string>
     <string name="restore_ok">OK</string>
     <string name="restore_cancel">Zrušit</string>

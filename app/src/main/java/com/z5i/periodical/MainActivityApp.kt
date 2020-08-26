@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package de.arnowelzel.android.periodical
+package com.z5i.periodical
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -37,8 +37,8 @@ import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.drawerlayout.widget.DrawerLayout.DrawerListener
 import com.google.android.material.navigation.NavigationView
-import de.arnowelzel.android.periodical.PeriodicalDatabase.DayEntry
-import de.arnowelzel.android.periodical.context.ZApplication
+import com.z5i.periodical.PeriodicalDatabase.DayEntry
+import com.z5i.periodical.context.ZApplication
 import java.text.SimpleDateFormat
 import java.util.*
 
