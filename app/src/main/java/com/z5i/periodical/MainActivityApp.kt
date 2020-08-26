@@ -121,11 +121,11 @@ class MainActivityApp : AppCompatActivity(), NavigationView.OnNavigationItemSele
 //
 //            override fun onDrawerStateChanged(newState: Int) {}
             override fun onDrawerStateChange(oldState: Int, newState: Int) {
-                Log.d("CalendarCell", newState.toString())
+                this@MainActivityApp.navigationDrawerActive = newState != 0
             }
 
             override fun onDrawerSlide(openRatio: Float, offsetPixels: Int) {
-                navigationDrawerActive = true
+                this@MainActivityApp.navigationDrawerActive = true
             }
         })
         val navigationView = findViewById<NavigationView>(R.id.nav_view)
