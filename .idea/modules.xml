@@ -6,6 +6,8 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/periodical.iml" filepath="$PROJECT_DIR$/.idea/modules/periodical.iml" group="periodical" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/periodical-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/periodical-app.iml" group="periodical/app" />
       <module fileurl="file://$PROJECT_DIR$/source.iml" filepath="$PROJECT_DIR$/source.iml" group="source" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/z-perio-assis.iml" filepath="$PROJECT_DIR$/.idea/modules/z-perio-assis.iml" group="z-perio-assis" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/z-perio-assis-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/z-perio-assis-app.iml" group="z-perio-assis/app" />
     </modules>
   </component>
 </project>
