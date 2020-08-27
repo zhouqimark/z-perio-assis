@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="gray">#444440</color>
-    <color name="pinkBar">#ffc0cb</color>
-    <color name="statusColor">#ffc0cb</color>
+    <color name="pinkBar">#FADDD9</color>
+    <color name="pinkDrawer">#FADDD9</color>
+    <color name="statusColor">#FADDD9</color>
 </resources>

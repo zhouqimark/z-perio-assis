@@ -375,7 +375,7 @@ class CalendarCell(context: Context, attrs: AttributeSet?) : Button(context, att
             }
         }
 
-        // Draw main label
+        // Draw drawer_menu label
         label = text.toString()
         paintLabel.textSize = 10 * metrics.scaledDensity
         paintLabel.color = colorLabel

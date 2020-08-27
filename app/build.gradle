@@ -47,6 +47,7 @@ dependencies {
     implementation 'top.androidman:superfamily:2.2.0'
     implementation 'com.mxn.soul:flowingdrawer-core:2.1.0'
     implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'com.google.android.material:material:1.2.0'
 }
 repositories {
     mavenCentral()

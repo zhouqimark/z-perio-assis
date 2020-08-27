@@ -1,5 +1,5 @@
 /*
- * Periodical main activity wrapper
+ * Periodical drawer_menu activity wrapper
  * Copyright (C) 2012-2020 Arno Welzel
  *
  * This code is free software: you can redistribute it and/or modify

@@ -140,7 +140,7 @@ class ListActivity : AppCompatActivity(), OnItemClickListener {
     }
 
     /**
-     * Handler for opening a list item which will return to the main view
+     * Handler for opening a list item which will return to the drawer_menu view
      *
      * @param adapterView The ListView where the click happened
      * @param v           The view that was clicked within the ListView

@@ -50,7 +50,7 @@ internal class PeriodicalDatabase(
     @JvmField
     val DEFAULT_SHOW_CYCLE = true
 
-    val DATABASE_NAME = "main.db"
+    val DATABASE_NAME = "drawer_menu.db"
     val DATABASE_VERSION = 4
 
     private var db: SQLiteDatabase? = null

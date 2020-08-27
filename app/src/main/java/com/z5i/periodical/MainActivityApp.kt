@@ -1,5 +1,5 @@
 /*
- * Periodical main activity
+ * Periodical drawer_menu activity
  * Copyright (C) 2012-2020 Arno Welzel
  *
  * This code is free software: you can redistribute it and/or modify
@@ -37,18 +37,20 @@ import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.drawerlayout.widget.DrawerLayout.DrawerListener
+import androidx.fragment.app.Fragment
 import com.google.android.material.navigation.NavigationView
 import com.mxn.soul.flowingdrawer_core.ElasticDrawer
 import com.mxn.soul.flowingdrawer_core.FlowingDrawer
 import com.z5i.periodical.PeriodicalDatabase.DayEntry
 import com.z5i.periodical.context.ZApplication
+import com.z5i.periodical.fragment.MenuListFragment
 import java.text.SimpleDateFormat
 import java.util.*
 
 /**
- * The main activity of the app
+ * The drawer_menu activity of the app
  */
-class MainActivityApp : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+class MainActivityApp : AppCompatActivity() {
     private val calButtonIds = intArrayOf(R.id.cal01, R.id.cal02, R.id.cal03,
             R.id.cal04, R.id.cal05, R.id.cal06, R.id.cal07, R.id.cal08,
             R.id.cal09, R.id.cal10, R.id.cal11, R.id.cal12, R.id.cal13,
@@ -80,11 +82,8 @@ class MainActivityApp : AppCompatActivity(), NavigationView.OnNavigationItemSele
     private var firstDayOfWeek = 0
     private var dbMain: PeriodicalDatabase? = null
 
-    /* Status of the main navigartion drawer */
+    /* Status of the drawer_menu navigartion drawer */
     private var navigationDrawerActive = false
-
-    //设置状态栏颜色
-
 
     /**
      * Called when activity starts
@@ -93,7 +92,7 @@ class MainActivityApp : AppCompatActivity(), NavigationView.OnNavigationItemSele
         super.onCreate(savedInstanceState)
         val context = applicationContext!!
 
-        // Setup main view with navigation drawer
+        // Setup drawer_menu view with navigation drawer
         setContentView(R.layout.activity_main)
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
@@ -105,21 +104,8 @@ class MainActivityApp : AppCompatActivity(), NavigationView.OnNavigationItemSele
         drawer.setTouchMode(ElasticDrawer.TOUCH_MODE_BEZEL)
 
         // Listener to detect when the navigation drawer is opening, so we
-        // avoid the main view to handle the swipe of the navigation drawer
+        // avoid the drawer_menu view to handle the swipe of the navigation drawer
         drawer.setOnDrawerStateChangeListener(object : ElasticDrawer.OnDrawerStateChangeListener {
-//            override fun onDrawerSlide(drawerView: View, slideOffset: Float) {
-//                navigationDrawerActive = true
-//            }
-//
-//            override fun onDrawerOpened(drawerView: View) {
-//                navigationDrawerActive = true
-//            }
-//
-//            override fun onDrawerClosed(drawerView: View) {
-//                navigationDrawerActive = false
-//            }
-//
-//            override fun onDrawerStateChanged(newState: Int) {}
             override fun onDrawerStateChange(oldState: Int, newState: Int) {
                 this@MainActivityApp.navigationDrawerActive = if (newState == 0) false else true
             }
@@ -128,8 +114,7 @@ class MainActivityApp : AppCompatActivity(), NavigationView.OnNavigationItemSele
                 this@MainActivityApp.navigationDrawerActive = true
             }
         })
-        val navigationView = findViewById<NavigationView>(R.id.nav_view)
-        navigationView.setNavigationItemSelectedListener(this)
+        this.setupFragment(MenuListFragment())
 
         // Setup gesture handling
         gestureDetector = GestureDetector(context, CalendarGestureDetector())
@@ -203,53 +188,15 @@ class MainActivityApp : AppCompatActivity(), NavigationView.OnNavigationItemSele
         }
     }
 
-    /**
-     * Called when the user selects an item in the navigation drawr
-     */
-    override fun onNavigationItemSelected(item: MenuItem): Boolean {
-        val drawer = findViewById<DrawerLayout>(R.id.drawer_layout)
-        drawer.closeDrawer(GravityCompat.START)
-        when (item.itemId) {
-            R.id.list -> {
-                showList()
-                return true
-            }
-            R.id.listdetails -> {
-                showListDetails()
-                return true
-            }
-            R.id.help -> {
-                showHelp()
-                return true
-            }
-            R.id.about -> {
-                showAbout()
-                return true
-            }
-            R.id.copy -> {
-                doBackup()
-                return true
-            }
-            R.id.restore -> {
-                doRestore()
-                return true
-            }
-            R.id.options -> {
-                showOptions()
-                return true
-            }
-            R.id.exit -> {
-                finish()
-                return true
-            }
-        }
-        return true
+    private fun setupFragment(fragment: Fragment) {
+        val fragmentManager = supportFragmentManager
+        fragmentManager.beginTransaction().add(R.id.id_container_menu, fragment).commit()
     }
 
     /**
      * Handler for "Help" menu action
      */
-    private fun showHelp() {
+    internal fun showHelp() {
         startActivityForResult(
                 Intent(this@MainActivityApp, HelpActivity::class.java), HELP_CLOSED)
     }
@@ -257,7 +204,7 @@ class MainActivityApp : AppCompatActivity(), NavigationView.OnNavigationItemSele
     /**
      * Handler for "About" menu action
      */
-    private fun showAbout() {
+    internal fun showAbout() {
         startActivityForResult(
                 Intent(this@MainActivityApp, AboutActivity::class.java), ABOUT_CLOSED)
     }
@@ -265,7 +212,7 @@ class MainActivityApp : AppCompatActivity(), NavigationView.OnNavigationItemSele
     /**
      * Handler for "List" menu action
      */
-    private fun showList() {
+    internal fun showList() {
         startActivityForResult(
                 Intent(this@MainActivityApp, ListActivity::class.java), PICK_DATE)
     }
@@ -273,7 +220,7 @@ class MainActivityApp : AppCompatActivity(), NavigationView.OnNavigationItemSele
     /**
      * Handler for "List, details" menu action
      */
-    private fun showListDetails() {
+    internal fun showListDetails() {
         startActivityForResult(
                 Intent(this@MainActivityApp, ListDetailsActivity::class.java), PICK_DATE)
     }
@@ -281,16 +228,18 @@ class MainActivityApp : AppCompatActivity(), NavigationView.OnNavigationItemSele
     /**
      * Handler for "Options" menu action
      */
-    private fun showOptions() {
+    internal fun showOptions() {
         startActivityForResult(
                 Intent(this@MainActivityApp, PreferenceActivity::class.java), SET_OPTIONS)
     }
 
+    //创建toolbar的菜单选项
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.toolbar_menu, menu)
         return true
     }
 
+    //分派菜单选项点击事件的响应
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.buttonprev -> {
@@ -417,7 +366,7 @@ class MainActivityApp : AppCompatActivity(), NavigationView.OnNavigationItemSele
     }
 
     /**
-     * Handler for "previous month" button in main view
+     * Handler for "previous month" button in drawer_menu view
      */
     fun goPrev(v: View?) {
         // Update calendar
@@ -441,7 +390,7 @@ class MainActivityApp : AppCompatActivity(), NavigationView.OnNavigationItemSele
     }
 
     /**
-     * Handler for "next month" button in main view
+     * Handler for "next month" button in drawer_menu view
      */
     fun goNext(v: View?) {
         // Update calendar
@@ -465,7 +414,7 @@ class MainActivityApp : AppCompatActivity(), NavigationView.OnNavigationItemSele
     }
 
     /**
-     * Handler for "current" button in main view
+     * Handler for "current" button in drawer_menu view
      */
     fun goCurrent(v: View?) {
         initMonth()
@@ -484,7 +433,7 @@ class MainActivityApp : AppCompatActivity(), NavigationView.OnNavigationItemSele
     /**
      * Handler for "backup" menu action
      */
-    private fun doBackup() {
+    internal fun doBackup() {
         val context = applicationContext!!
         val preferences = PreferenceUtils(context)
         val backupUriString = preferences.getString("backup_uri", "")
@@ -545,7 +494,7 @@ class MainActivityApp : AppCompatActivity(), NavigationView.OnNavigationItemSele
     /**
      * Handler for "restore" menu action
      */
-    private fun doRestore() {
+    internal fun doRestore() {
         val context = applicationContext!!
         val preferences = PreferenceUtils(context)
         val backupUriString = preferences.getString("backup_uri", "")
