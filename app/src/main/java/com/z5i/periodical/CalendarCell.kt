@@ -226,7 +226,7 @@ class CalendarCell(context: Context, attrs: AttributeSet?) : Button(context, att
     /**
      * Bitmap for entries with flag "intercourse" (black variant)
      */
-    private val bitmapIntercourseBlack: Bitmap
+    //private val bitmapIntercourseBlack: Bitmap?
 
     /**
      * Bitmap for entries with flag "notes"
@@ -290,7 +290,7 @@ class CalendarCell(context: Context, attrs: AttributeSet?) : Button(context, att
             paintFocus.shader = gradientPressButton
             paintFocus.style = Paint.Style.FILL
             paintFocus.isAntiAlias = true
-            canvas.drawCircle(rectCanvas.centerX(), rectCanvas.centerY(), 20 * metrics.density, paintFocus)
+            canvas.drawCircle(rectCanvas.centerX(), rectCanvas.centerY(), 25 * metrics.density, paintFocus)
             colorLabel = -0x22000000
             Log.d("CalendarCell", colorLabel.toInt().toString())
         } else {
@@ -328,9 +328,9 @@ class CalendarCell(context: Context, attrs: AttributeSet?) : Button(context, att
             paintBackground.shader = gradient
             paintBackground.style = Paint.Style.FILL
             paintBackground.isAntiAlias = true
-            canvas.drawCircle(rectCanvas.centerX(), rectCanvas.centerY(), 20 * metrics.density, paintBackground)
+            canvas.drawCircle(rectCanvas.centerX(), rectCanvas.centerY(), 25 * metrics.density, paintBackground)
             // Draw period start indicator
-            rectOverlay[(4 * metrics.density).toInt(), rectCanvas.height().toInt() - ((2 + overlaysize) * metrics.density).toInt(), ((overlaysize + 2) * metrics.density).toInt()] = rectCanvas.height().toInt() - (4 * metrics.density).toInt()
+            rectOverlay[(rectCanvas.width() / 2 - 20 * metrics.density / 2).toInt(), rectCanvas.height().toInt() - ((2 + 30) * metrics.density).toInt(), (rectCanvas.width() / 2 + 20 * metrics.density / 2).toInt()] = rectCanvas.height().toInt() - (15 * metrics.density).toInt()
 
             if (type == DayEntry.PERIOD_START) {
                 canvas.drawBitmap(bitmapPeriod, null, rectOverlay, paintBitmap)
@@ -357,22 +357,23 @@ class CalendarCell(context: Context, attrs: AttributeSet?) : Button(context, att
             // Draw intercourse indicator
             rectOverlay[rectCanvas.width().toInt() - (overlaysize * metrics.density).toInt(), (4 * metrics.density).toInt(), rectCanvas.width().toInt() - (4 * metrics.density).toInt()] = (overlaysize * metrics.density).toInt()
             if (intercourse) {
-                if (colorLabel == -0x1) {
-                    canvas.drawBitmap(bitmapIntercourse, null, rectOverlay, paintBitmap)
-                } else {
-                    canvas.drawBitmap(bitmapIntercourseBlack, null, rectOverlay, paintBitmap)
-                }
+//                if (colorLabel == -0x1) {
+//                    canvas.drawBitmap(bitmapIntercourse, null, rectOverlay, paintBitmap)
+//                } else {
+//                    canvas.drawBitmap(bitmapIntercourseBlack, null, rectOverlay, paintBitmap)
+//                }
+                canvas.drawBitmap(bitmapIntercourse, null, rectOverlay, paintBitmap)
             }
 
             // Draw notes indicator
-            rectOverlay[(rectCanvas.width() / 2 - overlaysize * metrics.density / 2).toInt(), rectCanvas.height().toInt() - ((2 + overlaysize) * metrics.density).toInt(), (rectCanvas.width() / 2 + overlaysize * metrics.density / 2).toInt()] = rectCanvas.height().toInt() - (4 * metrics.density).toInt()
-            if (notes) {
-                if (colorLabel == -0x1) {
-                    canvas.drawBitmap(bitmapNotes, null, rectOverlay, paintBitmap)
-                } else {
-                    canvas.drawBitmap(bitmapNotesBlack, null, rectOverlay, paintBitmap)
-                }
-            }
+//            rectOverlay[(rectCanvas.width() / 2 - overlaysize * metrics.density / 2).toInt(), rectCanvas.height().toInt() - ((2 + 43) * metrics.density).toInt(), (rectCanvas.width() / 2 + overlaysize * metrics.density / 2).toInt()] = rectCanvas.height().toInt() - (20 * metrics.density).toInt()
+//            if (notes) {
+//                if (colorLabel == -0x1) {
+//                    canvas.drawBitmap(bitmapNotes, null, rectOverlay, paintBitmap)
+//                } else {
+//                    canvas.drawBitmap(bitmapNotesBlack, null, rectOverlay, paintBitmap)
+//                }
+//            }
         }
 
         // Draw drawer_menu label
@@ -580,8 +581,8 @@ class CalendarCell(context: Context, attrs: AttributeSet?) : Button(context, att
                 R.drawable.ic_ovulation_predicted)
         bitmapIntercourse = BitmapFactory.decodeResource(resources,
                 R.drawable.ic_intercourse)
-        bitmapIntercourseBlack = BitmapFactory.decodeResource(resources,
-                R.drawable.ic_intercourse_black)
+        //bitmapIntercourseBlack = BitmapFactory.decodeResource(resources,
+        //        R.drawable.ic_intercourse_black)
         bitmapNotes = BitmapFactory.decodeResource(resources,
                 R.drawable.ic_notes)
         bitmapNotesBlack = BitmapFactory.decodeResource(resources,
