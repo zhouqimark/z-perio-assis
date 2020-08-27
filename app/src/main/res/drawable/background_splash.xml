@@ -5,6 +5,6 @@
     <item>
         <bitmap
             android:gravity="center"
-            android:src="@drawable/periodical" />
+            android:src="@drawable/love_you" />
     </item>
 </layer-list>
