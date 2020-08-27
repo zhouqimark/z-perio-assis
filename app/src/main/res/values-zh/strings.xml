@@ -37,10 +37,10 @@
     <string name="backup_newfolder">选择新的备份存储位置</string>
     <string name="backup_help">帮助</string>
     <string name="backup_finished">备份完成</string>
-    <string name="backup_noruiyet">no location selected yet</string>
+    <string name="backup_noruiyet">还未选择位置</string>
     <string name="backup_failed">备份失败!</string>
     <string name="restore_title">导入数据</string>
-    <string name="restore_selectfolder">Please select the location, where the backup was saved (the location with the folder \"com.z5i.periodical\").</string>
+    <string name="restore_selectfolder">请选择备份数据的存储位置</string>
     <string name="restore_text">想要导入最近一次数据备份吗?\n这将覆盖当前数据!</string>
     <string name="restore_ok">好</string>
     <string name="restore_cancel">取消</string>
@@ -48,23 +48,23 @@
     <string name="restore_failed">导入失败!</string>
     <string name="permissions_needed">为了备份和导入，中中的姨妈助手需要系统文件的访问权限。</string>
     <string name="permissions_needed_ok">好</string>
-    <string name="event_periodstart">Period has started</string>
-    <string name="event_periodlength">Last cycle had %s days</string>
-    <string name="event_ignored">Cycle length ignored</string>
-    <string name="event_periodfirst">First entry</string>
-    <string name="calendaraction_title">Edit calendar entry</string>
+    <string name="event_periodstart">经期已开始</string>
+    <string name="event_periodlength">最近周期有%s天</string>
+    <string name="event_ignored">被忽略的周期长度</string>
+    <string name="event_periodfirst">第一次记录</string>
+    <string name="calendaraction_title">编辑日历记录</string>
     <string name="calendaraction_add">把这天标记为 \"经期\"?</string>
     <string name="calendaraction_remove">把这天从 \"经期\" 标记中移除?</string>
-    <string name="calendaraction_removeperiod">Remove this Period?</string>
+    <string name="calendaraction_removeperiod">移除这次经期?</string>
     <string name="calendaraction_ok">是的</string>
     <string name="calendaraction_cancel">不是</string>
     <string name="calendaraction_details">编辑详情</string>
     <string name="options_title">偏好设置</string>
-    <string name="pref_periodlength">Default length of period (days)</string>
-    <string name="invalid_period_length">The default period length must be between 1 and 14!</string>
-    <string name="pref_luteallength">Luteal phase length (days)</string>
-    <string name="invalid_luteal_length">The luteal length must be at least 1!</string>
-    <string name="pref_startofweek">Start of the week</string>
+    <string name="pref_periodlength">默认经期持续天数 (天)</string>
+    <string name="invalid_period_length">默认经期天数必须在1到14之间!</string>
+    <string name="pref_luteallength">黄体期天数 (天)</string>
+    <string name="invalid_luteal_length">黄体期天数不能小于1!</string>
+    <string name="pref_startofweek">一周的开始</string>
     <string-array name="list_startofweek">
         <item>周日</item>
         <item>周一</item>
@@ -73,21 +73,21 @@
         <item>0</item>
         <item>1</item>
     </string-array>
-    <string name="pref_maximum_cycle_length">Maximum cycle length</string>
-    <string name="invalid_maximum_cycle_length">The maximum cycle length must be at least 60!</string>
-    <string name="pref_direct_details">Go directly to the details</string>
-    <string name="pref_show_cycle">Show day of cycle</string>
+    <string name="pref_maximum_cycle_length">最大周期天数</string>
+    <string name="invalid_maximum_cycle_length">最大的周期天数必须小于60!</string>
+    <string name="pref_direct_details">直接进入详情页面</string>
+    <string name="pref_show_cycle">当前日期标记圆圈</string>
     <string name="previous_month">前一月</string>
     <string name="next_month">下一月</string>
-    <string name="label_average_cycle">average cycle</string>
-    <string name="label_shortest_cycle">shortest cycle</string>
-    <string name="label_longest_cycle">longest cycle</string>
-    <string name="label_infertile">infertile</string>
-    <string name="label_fertile">fertile</string>
-    <string name="label_period_started">period has started</string>
-    <string name="label_period">period</string>
-    <string name="label_period_predicted">period predicted</string>
-    <string name="label_ovulation">ovulation</string>
+    <string name="label_average_cycle">平均周期</string>
+    <string name="label_shortest_cycle">最短周期</string>
+    <string name="label_longest_cycle">最长周期</string>
+    <string name="label_infertile">不易受孕</string>
+    <string name="label_fertile">易受孕</string>
+    <string name="label_period_started">经期已开始</string>
+    <string name="label_period">经期</string>
+    <string name="label_period_predicted">经期预测</string>
+    <string name="label_ovulation">排卵</string>
     <string name="asset_about">en/about.html</string>
     <string name="asset_help">en/help.html</string>
     <string name="label_details_period">经期</string>
@@ -120,12 +120,12 @@
     <string name="label_details_ev16" tools:keep="@string/label_details_ev16">渴望</string>
     <string name="label_details_ev17" tools:keep="@string/label_details_ev17">头疼</string>
     <string name="label_details_ev18" tools:keep="@string/label_details_ev18">避孕药</string>
-    <string name="label_details_ev19" tools:keep="@string/label_details_ev19">Spotting</string>
+    <string name="label_details_ev19" tools:keep="@string/label_details_ev19">污迹</string>
     <string name="label_details_ev20" tools:keep="@string/label_details_ev20">吃力</string>
     <string name="label_details_ev21" tools:keep="@string/label_details_ev21">充满活力</string>
     <string name="label_details_ev22" tools:keep="@string/label_details_ev22">伤心</string>
     <string name="label_details_ev23" tools:keep="@string/label_details_ev23">烦躁</string>
-    <string name="label_period_day">Period, day %d</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="label_period_day">经期，天 %d</string>
+    <string name="navigation_drawer_open">打开导航窗</string>
+    <string name="navigation_drawer_close">关闭导航窗</string>
 </resources>
