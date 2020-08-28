@@ -60,7 +60,7 @@
                         android:contentDescription="@string/main_calday_su_description"
                         android:gravity="center"
                         android:text="@string/main_calday_su"
-                        android:textColor="#ffffffff"
+                        android:textColor="#ff000000"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
@@ -69,7 +69,7 @@
                         android:contentDescription="@string/main_calday_mo_description"
                         android:gravity="center"
                         android:text="@string/main_calday_mo"
-                        android:textColor="#ffffffff"
+                        android:textColor="#ff000000"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
@@ -78,7 +78,7 @@
                         android:contentDescription="@string/main_calday_tu_description"
                         android:gravity="center"
                         android:text="@string/main_calday_tu"
-                        android:textColor="#ffffffff"
+                        android:textColor="#ff000000"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
@@ -87,7 +87,7 @@
                         android:contentDescription="@string/main_calday_we_description"
                         android:gravity="center"
                         android:text="@string/main_calday_we"
-                        android:textColor="#ffffffff"
+                        android:textColor="#ff000000"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
@@ -96,7 +96,7 @@
                         android:contentDescription="@string/main_calday_th_description"
                         android:gravity="center"
                         android:text="@string/main_calday_th"
-                        android:textColor="#ffffffff"
+                        android:textColor="#ff000000"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
@@ -105,7 +105,7 @@
                         android:contentDescription="@string/main_calday_fr_description"
                         android:gravity="center"
                         android:text="@string/main_calday_fr"
-                        android:textColor="#ffffffff"
+                        android:textColor="#ff000000"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
@@ -114,7 +114,7 @@
                         android:contentDescription="@string/main_calday_sa_description"
                         android:gravity="center"
                         android:text="@string/main_calday_sa"
-                        android:textColor="#ffffffff"
+                        android:textColor="#ff000000"
                         android:textSize="18sp"
                         android:textStyle="bold" />
                 </TableRow>

@@ -6,7 +6,7 @@
         android:layout_width="54dp"
         android:layout_height="wrap_content"
         android:contentDescription="@string/previous_month"
-        android:icon="@drawable/ic_arrow_back_black_32dp"
+        android:icon="@drawable/ic_arrow_back"
         android:gravity="center"
         android:title="@string/previous_month"
         app:showAsAction="always" />
@@ -15,7 +15,7 @@
         android:layout_width="54dp"
         android:layout_height="wrap_content"
         android:contentDescription="@string/current_day"
-        android:icon="@drawable/ic_today_black_32dp"
+        android:icon="@drawable/ic_today"
         android:gravity="center"
         android:title="@string/current_day"
         app:showAsAction="always" />
@@ -25,7 +25,7 @@
         android:layout_width="54dp"
         android:layout_height="wrap_content"
         android:contentDescription="@string/next_month"
-        android:icon="@drawable/ic_arrow_forward_black_32dp"
+        android:icon="@drawable/ic_arrow_forward"
         android:title="@string/next_month"
         app:showAsAction="always" />
 

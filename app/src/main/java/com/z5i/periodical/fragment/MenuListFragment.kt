@@ -19,6 +19,7 @@ class MenuListFragment: Fragment() {
         val view = inflater.inflate(R.layout.fragment_menu, container, false)
 
         val navigationView = view.findViewById<NavigationView>(R.id.navigation_view)
+        navigationView.itemIconTintList = null
         navigationView.setNavigationItemSelectedListener {
             menuItem ->
             val mActivity = activity!! as MainActivityApp
