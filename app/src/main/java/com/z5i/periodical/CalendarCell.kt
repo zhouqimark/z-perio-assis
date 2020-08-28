@@ -273,7 +273,8 @@ class CalendarCell(context: Context, attrs: AttributeSet?) : Button(context, att
      */
     override fun onDraw(canvas: Canvas) {
         var gradient = gradientEmpty
-        var colorLabel = -0x22000000
+        //var colorLabel = -0x22000000 //黑色字体
+        var colorLabel = -0x1
         var label: String
 
         // Adjust overlay size depending on orientation
@@ -566,7 +567,7 @@ class CalendarCell(context: Context, attrs: AttributeSet?) : Button(context, att
         gradientInfertilePredicted = makeCellGradient(-0x11a8, -0x11a8)
         gradientInfertileFuture = makeCellGradient(-0xa63, -0xa63)
         //gradientEmpty = makeCellGradient(-0x8a8a8b, -0x8a8a8b)
-        gradientEmpty = makeCellGradient( 0xffcfd9df.toInt(), 0xffe2ebf0.toInt());
+        gradientEmpty = makeCellGradient( 0xff434343.toInt(), 0xff434343.toInt());
 
         // Overlays
         rectOverlay = Rect()
