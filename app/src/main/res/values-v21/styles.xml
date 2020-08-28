@@ -3,6 +3,7 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="android:statusBarColor">@color/statusColor</item>
+        <item name="titleTextColor">@color/blackTitle</item>
         <item name="android:navigationBarColor">@android:color/black</item>
     </style>
 </resources>

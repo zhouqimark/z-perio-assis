@@ -1,20 +1,3 @@
-/*
- * Periodical "help" activity
- * Copyright (C) 2012-2020 Arno Welzel
- *
- * This code is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
 package com.z5i.periodical
 
 import android.annotation.SuppressLint
@@ -151,8 +134,7 @@ class DetailsActivity : AppCompatActivity(), View.OnClickListener, TextWatcher {
                 13,  // Fainting
                 15,  // Nausea
                 16)
-        var num = 0
-        for (eventId in eventIds) {
+        for ((num, eventId) in eventIds.withIndex()) {
             @SuppressLint("DefaultLocale") val resName = String.format("label_details_ev%d", eventId)
             val resId = resources.getIdentifier(resName, "string", packageName)
             if (resId != 0) {
@@ -165,13 +147,12 @@ class DetailsActivity : AppCompatActivity(), View.OnClickListener, TextWatcher {
                 option.setOnClickListener(this)
                 if (num < 2) {
                     groupEvents.addView(option)
-                } else if (num > 1 && num < 7) {
+                } else if (num in 2..6) {
                     groupMood.addView(option)
                 } else {
                     groupSymptoms.addView(option)
                 }
             }
-            num++
         }
     }
 
@@ -193,8 +174,7 @@ class DetailsActivity : AppCompatActivity(), View.OnClickListener, TextWatcher {
      * Listener for clicks on the radio buttons and checkboxes
      */
     override fun onClick(v: View) {
-        val id = v.id
-        when (id) {
+        when (v.id) {
             R.id.periodYes -> {
                 dbMain!!.addPeriod(entry!!.date)
                 databaseChanged()

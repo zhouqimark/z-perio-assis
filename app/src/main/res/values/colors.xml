@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="gray">#444440</color>
-    <color name="pinkBar">#FADDD9</color>
-    <color name="pinkDrawer">#FADDD9</color>
+    <color name="pinkBar">@color/statusColor</color>
+    <color name="pinkDrawer">@color/statusColor</color>
+    <color name="blackTitle">#000000</color>
     <color name="statusColor">#FADDD9</color>
 </resources>
