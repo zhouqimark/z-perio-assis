@@ -418,23 +418,19 @@ class MainActivityApp : AppCompatActivity() {
      * Handler for "current" button in drawer_menu view
      */
     fun goCurrent(v: View?) {
-        initMonth()
-        calendarUpdate()
+        //initMonth()
+        //calendarUpdate()
 
         if(AnimationHelper.backFromNext()) {
-            Log.d("MainActivityApp", "backfromnext" + AnimationHelper.getCounter().toString())
             while (AnimationHelper.getCounter() != 0) {
-                this.goPrev(null)
+                goPrev(null)
             }
-            Log.d("MainActivityApp", "backfromnext" + AnimationHelper.getCounter().toString())
         }
 
         if(AnimationHelper.backFromPrev()) {
-            Log.d("MainActivityApp", "backfromprev" + AnimationHelper.getCounter().toString())
             while (AnimationHelper.getCounter() != 0) {
-                this.goNext(null)
+                goNext(null)
             }
-            Log.d("MainActivityApp", "backfromnext" + AnimationHelper.getCounter().toString())
         }
     }
 
