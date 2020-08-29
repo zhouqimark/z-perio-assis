@@ -294,7 +294,7 @@ class MainActivityApp : AppCompatActivity() {
         // Output current year/month
         val displayDate = findViewById<TextView>(R.id.displaydate)
         @SuppressLint("SimpleDateFormat") val dateFormat = SimpleDateFormat("MMMM yyyy")
-        displayDate.text = String.format("%s\n平均周期%d 最短周期↓%d 最长周期↑%d",
+        displayDate.text = String.format("%s\n平均周期🙈%d 最短周期⬇️%d 最长周期⬆️%d",
                 dateFormat.format(cal.time),
                 dbMain!!.cycleAverage, dbMain!!.cycleShortest,
                 dbMain!!.cycleLongest)

@@ -105,10 +105,8 @@
     <string name="label_details_ev1" tools:keep="@string/label_details_ev1">爱爱</string>
     <string name="label_details_ev2" tools:keep="@string/label_details_ev2">腹疼</string>
     <string name="label_details_ev3" tools:keep="@string/label_details_ev3">背疼</string>
-    <string name="label_details_ev4" tools:keep="@string/label_details_ev4">Middle pain left</string>
-    <string name="label_details_ev5" tools:keep="@string/label_details_ev5">Middle pain right</string>
+    <string name="label_details_ev4" tools:keep="@string/label_details_ev4">腰疼</string>
     <string name="label_details_ev6" tools:keep="@string/label_details_ev6">胸疼</string>
-    <string name="label_details_ev7" tools:keep="@string/label_details_ev7">Thrush/candida</string>
     <string name="label_details_ev8" tools:keep="@string/label_details_ev8">排泄</string>
     <string name="label_details_ev9" tools:keep="@string/label_details_ev9">大出血</string>
     <string name="label_details_ev10" tools:keep="@string/label_details_ev10">体温波动</string>

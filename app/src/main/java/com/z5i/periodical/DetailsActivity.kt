@@ -123,10 +123,8 @@ class DetailsActivity : AppCompatActivity(), View.OnClickListener, TextWatcher {
                 2,  // Cramps
                 17,  // Headache/migraine
                 3,  // Back pain
-                4,  // Middle pain left
-                5,  // Middle pain right
+                4,  // 腰疼
                 6,  // Breast pain/dragging pain
-                7,  // Thrush/candida
                 8,  // Discharge
                 10,  // Temperature fluctuations
                 11,  // Pimples
