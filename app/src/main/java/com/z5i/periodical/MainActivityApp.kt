@@ -85,15 +85,14 @@ class MainActivityApp : AppCompatActivity() {
     /* Status of the drawer_menu navigartion drawer */
     private var navigationDrawerActive = false
 
-    /**
-     * Called when activity starts
-     */
+    private lateinit var flipper: ViewFlipper
     public override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val context = applicationContext!!
 
         // Setup drawer_menu view with navigation drawer
         setContentView(R.layout.activity_main)
+        this.flipper = findViewById(R.id.mainwidget)
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
         val drawer = findViewById<FlowingDrawer>(R.id.drawer_layout)
@@ -382,11 +381,12 @@ class MainActivityApp : AppCompatActivity() {
         }
         calendarUpdate()
 
-        // Show slide animation from left to right
-        val flipper = findViewById<ViewFlipper>(R.id.mainwidget)
-        flipper.inAnimation = AnimationHelper.inFromLeftAnimation()
-        flipper.outAnimation = AnimationHelper.outToRightAnimation()
-        flipper.showNext()
+        // 显示滑动动画，从左到右
+        this.flipper.inAnimation = AnimationHelper.inFromLeftAnimation()
+        this.flipper.outAnimation = AnimationHelper.outToRightAnimation()
+        this.flipper.showNext()
+
+        AnimationHelper.goPrevious()
     }
 
     /**
@@ -406,11 +406,12 @@ class MainActivityApp : AppCompatActivity() {
         }
         calendarUpdate()
 
-        // Show slide animation from right to left
-        val flipper = findViewById<ViewFlipper>(R.id.mainwidget)
+        // 显示滑动动画，从右到左
         flipper.inAnimation = AnimationHelper.inFromRightAnimation()
         flipper.outAnimation = AnimationHelper.outToLeftAnimation()
         flipper.showPrevious()
+
+        AnimationHelper.goNext()
     }
 
     /**
@@ -419,6 +420,22 @@ class MainActivityApp : AppCompatActivity() {
     fun goCurrent(v: View?) {
         initMonth()
         calendarUpdate()
+
+        if(AnimationHelper.backFromNext()) {
+            Log.d("MainActivityApp", "backfromnext" + AnimationHelper.getCounter().toString())
+            while (AnimationHelper.getCounter() != 0) {
+                this.goPrev(null)
+            }
+            Log.d("MainActivityApp", "backfromnext" + AnimationHelper.getCounter().toString())
+        }
+
+        if(AnimationHelper.backFromPrev()) {
+            Log.d("MainActivityApp", "backfromprev" + AnimationHelper.getCounter().toString())
+            while (AnimationHelper.getCounter() != 0) {
+                this.goNext(null)
+            }
+            Log.d("MainActivityApp", "backfromnext" + AnimationHelper.getCounter().toString())
+        }
     }
 
     /**
