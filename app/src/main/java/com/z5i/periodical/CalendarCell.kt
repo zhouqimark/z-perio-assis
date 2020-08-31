@@ -348,7 +348,7 @@ class CalendarCell(context: Context, attrs: AttributeSet?) : Button(context, att
             if (type == DayEntry.PERIOD_START || type == DayEntry.PERIOD_CONFIRMED) {
                 var i = 0
                 while (i < intensity && i < 4) {
-                    canvas.drawCircle((6 + i * 6) * metrics.density, 6 * metrics.density,
+                    canvas.drawCircle((19 + i * 6) * metrics.density, 25 * metrics.density,
                             2 * metrics.density, paintIntensity)
                     i++
                 }
