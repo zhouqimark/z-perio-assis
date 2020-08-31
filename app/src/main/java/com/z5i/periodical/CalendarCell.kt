@@ -257,13 +257,12 @@ class CalendarCell(context: Context, attrs: AttributeSet?) : Button(context, att
     override fun onSizeChanged(w: Int, h: Int, oldw: Int, oldh: Int) {
         super.onSizeChanged(w, h, oldw, oldh)
         rectCanvas[0f, 0f, w.toFloat()] = h.toFloat()
-        //gradientPeriodConfirmed = makeCellGradient(-0xbbcca, -0xbbcca)
-        makeCellGradient(0xfff093fb.toInt(), 0xfff5576c.toInt())
-        gradientPeriodPredicted = makeCellGradient(-0x106566, -0x106566)
-        gradientFertilityPredicted = makeCellGradient(-0xde690d, -0xde690d)
-        gradientFertilityFuture = makeCellGradient(-0x6f3507, -0x6f3507)
-        gradientInfertilePredicted = makeCellGradient(-0x11a8, -0x11a8)
-        gradientInfertileFuture = makeCellGradient(-0xa63, -0xa63)
+        gradientPeriodConfirmed = makeCellGradient(0xfff093fb.toInt(), 0xfff5576c.toInt())
+        gradientPeriodPredicted = makeCellGradient(0xffff9a9e.toInt(), 0xfffad0c4.toInt())
+        gradientFertilityPredicted = makeCellGradient(0xffc471f5.toInt(), 0xfffa71cd.toInt())
+        gradientFertilityFuture = makeCellGradient(0xffa18cd1.toInt(), 0xfffbc2eb.toInt())
+        gradientInfertilePredicted = makeCellGradient(0xff00cdac.toInt(), 0xff8ddad5.toInt())
+        gradientInfertileFuture = makeCellGradient(0xff20E2D7.toInt(), 0xffF9FEA5.toInt())
     }
 
     /**
@@ -560,13 +559,12 @@ class CalendarCell(context: Context, attrs: AttributeSet?) : Button(context, att
         rectOval2 = RectF()
         rectLabel = Rect()
         gradientPressButton = makeCellGradient(0xff868f96.toInt(), 0xff596164.toInt())
-        gradientPeriodConfirmed = makeCellGradient(0xfff5576c.toInt(), 0xfff093fb.toInt())
-        gradientPeriodPredicted = makeCellGradient(-0x106566, -0x106566)
-        gradientFertilityPredicted = makeCellGradient(-0xde690d, -0xde690d)
-        gradientFertilityFuture = makeCellGradient(-0x6f3507, -0x6f3507)
-        gradientInfertilePredicted = makeCellGradient(-0x11a8, -0x11a8)
-        gradientInfertileFuture = makeCellGradient(-0xa63, -0xa63)
-        //gradientEmpty = makeCellGradient(-0x8a8a8b, -0x8a8a8b)
+        gradientPeriodConfirmed = makeCellGradient(0xfff093fb.toInt(), 0xfff5576c.toInt())
+        gradientPeriodPredicted = makeCellGradient(0xffff9a9e.toInt(), 0xfffad0c4.toInt())
+        gradientFertilityPredicted = makeCellGradient(0xffc471f5.toInt(), 0xfffa71cd.toInt())
+        gradientFertilityFuture = makeCellGradient(0xffa18cd1.toInt(), 0xfffbc2eb.toInt())
+        gradientInfertilePredicted = makeCellGradient(0xff00cdac.toInt(), 0xff8ddad5.toInt())
+        gradientInfertileFuture = makeCellGradient(0xff20E2D7.toInt(), 0xffF9FEA5.toInt())
         gradientEmpty = makeCellGradient( 0xff434343.toInt(), 0xff434343.toInt());
 
         // Overlays
